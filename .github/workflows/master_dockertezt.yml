@@ -29,7 +29,6 @@ jobs:
         with:
           name: java-app
           path: '${{ github.workspace }}/target/*.jar'
-          retention-days: 1
 
   deploy:
     runs-on: ubuntu-latest
@@ -50,5 +49,5 @@ jobs:
         with:
           app-name: 'DockerTezt'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_5064724F24E042148E9DBDF3B399A917 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_79590B2D74364DC0A9C55DFCA40EEF13 }}
           package: '*.jar'
