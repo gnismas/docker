@@ -49,5 +49,5 @@ jobs:
         with:
           app-name: 'DockerTezt'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_796BF85F19C249358E50B13A59689233 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_BF67A98ED27944D6894F3597B08054C0 }}
           package: '*.jar'
