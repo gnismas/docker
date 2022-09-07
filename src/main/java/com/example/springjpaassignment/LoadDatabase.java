@@ -14,7 +14,7 @@ import org.springframework.context.annotation.Configuration;
         @Bean
         CommandLineRunner initDatabase(UserRepository repository) {
             return args -> {
-                log.info("Preloading " + repository.save(new User("Desadasasdadsdsaasdasdasdnnis","johnjohn")));
+                log.info("Preloading " + repository.save(new User("Dennis","johnjohn")));
                 log.info("Preloading " + repository.save(new User("Flemse70","henning2020")));
             };
         }
